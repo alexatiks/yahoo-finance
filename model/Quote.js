@@ -5,7 +5,6 @@ class Quote {
    * @param {Object} object
    * @property {String} symbol
    * @property {Date} date
-   * @property {String} source
    * @property {Object} price
    * @property {Number} price.open
    * @property {Number} price.high
@@ -16,7 +15,6 @@ class Quote {
   constructor(object) {
     this.symbol = object.symbol;
     this.date = object.date;
-    this.source = object.source;
     this.price = object.price;
   }
 
