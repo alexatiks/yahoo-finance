@@ -1,4 +1,5 @@
 const https = require('https');
+const Quote = require('./objects/Quote');
 
 const RANGES = ['1h', '1d', '5d', '1mo', '1y', 'max'];
 
@@ -46,6 +47,8 @@ class Yahoo {
         return new Promise((resolve, reject) => {
             let options = {
                 interval: '1d',
+                period1: 0,
+                period2: 9999999999,
                 ...args,
             };
 
